@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            background-image: url('https://cdn.wallpapersafari.com/39/25/bM0dIH.jpg');
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+    <title>Water Quality Prediction</title>
+</head>
+<body>
+    <center>
+    <h1>Water Quality Prediction Result:</h1>
+    <img src="{{ uploaded_image.url }}" alt="Uploaded Image">
+    <p>The image uploaded belongs to {{ prediction }}</p>
+    <p>with a {{confidence}} % confidence.</p>
+    </center>
+</body>
+</html>
