@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Water Image</title>
+    <style>
+        body{
+            background-image: url('https://cdn.wallpapersafari.com/39/25/bM0dIH.jpg');
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <center><h1 style="font-size:50px;">Upload a Water Image</h1>
+    <form method="POST" action="{% url 'predict' %}" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="image">
+        <input type="submit" value="Predict">
+    </form>
+    </center>
+</body>
+</html>
